@@ -9,6 +9,7 @@ provider:
   apiGateway:
     shouldStartNameWithService: true
 
+
 plugins:
   - serverless-offline
 
@@ -37,3 +38,8 @@ functions:
           path: /api
           method: GET
           cors: true
+
+  helloworld:
+    handler: src/helloworld.handler
+    
+
