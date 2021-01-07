@@ -3,7 +3,6 @@ service: serverless
 provider:
   name: aws
   runtime: nodejs12.x
-  # profile: femasters
   region: us-west-1
   stage: dev
   lambdaHashingVersion: 20201221
