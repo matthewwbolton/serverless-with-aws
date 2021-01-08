@@ -2,8 +2,9 @@ service: serverless
 
 provider:
   name: aws
+  profile: serverless-with-aws
   runtime: nodejs12.x
-  region: us-west-1
+  region: us-east-1
   stage: dev
   lambdaHashingVersion: 20201221
   apiGateway:
