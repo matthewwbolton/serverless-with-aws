@@ -10,6 +10,7 @@ provider:
   apiGateway:
     shouldStartNameWithService: true
 
+
 plugins:
   - serverless-offline
 
@@ -36,3 +37,10 @@ functions:
   #         request:
   #           parameters:
   #             id: true
+
+
+  helloworld:
+    handler: src/helloworld.handler
+    
+
+
