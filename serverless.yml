@@ -41,6 +41,4 @@ functions:
 
   helloworld:
     handler: src/helloworld.handler
-    
-
 

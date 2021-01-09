@@ -1,10 +1,11 @@
-module.exports.handler = (evt, ctx, done) => {
-  done(null, {
-    statusCode: 200,
-    headers: {},
-    body: JSON.stringify({
-      message:
-        "This is a test of the Lambda function through the serveless-offline API Gateway proxy.",
-    }),
-  });
-};
+const express = require("express");
+const http = require("serverless-http");
+
+const app = express();
+
+app.get("/", (req, res) => {
+  res.json({ message: "ok" });
+});
+
+module.exports.handler = http(app);
+
