@@ -2,9 +2,9 @@ service: serverless
 
 provider:
   name: aws
-  runtime: nodejs8.10
-  profile: femasters
-  region: us-west-1
+  runtime: nodejs12.x
+  profile: serverless-with-aws
+  region: us-east-1
   stage: dev
 
 plugins:
