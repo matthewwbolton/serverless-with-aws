@@ -10,13 +10,12 @@ provider:
   apiGateway:
     shouldStartNameWithService: true
 
-
 plugins:
   - serverless-offline
 
 functions:
   api:
-    handler: src/api/api.handler
+    handler: src/api/index.handler
     events:
       - http: ANY /
       - http: "ANY /{param+}"
@@ -38,7 +37,5 @@ functions:
   #           parameters:
   #             id: true
 
-
   helloworld:
     handler: src/helloworld.handler
-
